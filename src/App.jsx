@@ -1,23 +1,11 @@
-import { people } from "./data";
+import Starter from "./tutorial/06-forms/starter/01-controlled-inputs";
 
 function App() {
   return (
-    <div>
-      {people.map((person) => {
-        const { name, nickName, id } = person;
-        return <Person key={id} name={name} nickName={nickName} />;
-      })}
+    <div className="container">
+      <Starter />
     </div>
   );
 }
-
-const Person = ({ name, nickName }) => {
-  return (
-    <div>
-      <h2>{name}</h2>
-      <h3>{nickName}</h3>
-    </div>
-  );
-};
 
 export default App;
