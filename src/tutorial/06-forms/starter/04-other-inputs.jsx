@@ -38,9 +38,9 @@ const OtherInputs = () => {
             value={framework}
             onChange={handleFramework}
           >
-            {frameworks.map((framework) => {
-              <option key={framework}>{framework}</option>;
-            })}
+            {frameworks.map((framework) => (
+              <option key={framework}>{framework}</option>
+            ))}
           </select>
         </div>
         <button type="submit" className="btn btn-block">
